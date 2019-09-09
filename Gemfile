@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.6.3'
 
+gem 'pg'
 gem 'sinatra'
 
 group :test do
