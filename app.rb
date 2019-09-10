@@ -4,12 +4,21 @@ require './lib/bookmark'
 class BookmarkManager < Sinatra::Base
 
   get '/' do
-    'Bookmark Manager'
+    erb :index
   end
 
   get '/bookmarks' do
     @bookmarks = Bookmark.all
-    erb :'bookmarks/index'
+    erb :bookmarks
+  end
+
+  get '/new' do
+    erb :new
+  end
+
+  post '/new' do
+    Bookmark.add_new(params[:website])
+    redirect '/'
   end
 
   run! if app_file == $0

@@ -10,8 +10,13 @@ User Stories
 As a user,
 So that I can revisit a web page,
 I'd like to save a list of web page's addresses.
+
+As a user,
+So that I can look at my favourite page again,
+I'd like to add a bookmark to my bookmark manager.
 ```
 ![User Story 1](public/User story 1.png)
+
 
 Instruction
 -----
