@@ -1,8 +1,5 @@
-ENV['RACK_ENV'] = 'test'
-ENV['ENVIRONMENT'] = 'test'
-
 require File.join(File.dirname(__FILE__), '..', 'app.rb')
-require_relative './features/web_helper'
+require_relative './setup_test_database'
 
 require 'capybara'
 require 'capybara/rspec'
@@ -10,10 +7,12 @@ require 'rspec'
 
 Capybara.app = BookmarkManager
 
+ENV['RACK_ENV'] = 'test'
+ENV['ENVIRONMENT'] = 'test'
+
 RSpec.configure do |config|
   config.before(:each) do
     truncate_table
-    insert_bookmarks
   end
 end
 

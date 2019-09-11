@@ -1,11 +1,9 @@
 require 'bookmark'
 
-
 describe Bookmark do
   describe '.all' do
     it 'returns all bookmarks' do
-
-      connection = PG.connect(dbname: 'bookmark_manager_test')
+      truncate_table
 
       bookmark = Bookmark.add_new(url: "http://www.makersacademy.com", title: "Makers Academy")
       Bookmark.add_new(url: "http://www.destroyallsoftware.com", title: "Destroy All Software")

@@ -2,7 +2,6 @@ require 'sinatra/base'
 require './lib/bookmark'
 
 class BookmarkManager < Sinatra::Base
-
   get '/' do
     erb :index
   end
@@ -17,9 +16,9 @@ class BookmarkManager < Sinatra::Base
   end
 
   post '/new' do
-    Bookmark.add_new(params[:website], params[:title])
+    Bookmark.add_new(url: params[:url], title: params[:title])
     redirect '/'
   end
 
-  run! if app_file == $0
+  run! if app_file == $PROGRAM_NAME
 end
