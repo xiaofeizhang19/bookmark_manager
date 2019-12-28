@@ -28,12 +28,6 @@ class Bookmark
       VALUES('#{url}', '#{title}')
       RETURNING id, url, title;
     EOF
-
-    Bookmark.new(
-      id: result[0]['id'],
-      title: result[0]['title'],
-      url: result[0]['url']
-    )
   end
 
   private_class_method

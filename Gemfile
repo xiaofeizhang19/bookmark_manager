@@ -4,6 +4,7 @@ ruby '2.6.3'
 
 gem 'pg'
 gem 'sinatra'
+gem "rack", ">= 2.0.8"
 
 group :test do
   gem 'capybara'

@@ -15,8 +15,6 @@ As a user,
 So that I can look at my favourite page again,
 I'd like to add a bookmark to my bookmark manager.
 ```
-![User Story 1](public/User story 1.png)
-
 
 Instruction
 -----
