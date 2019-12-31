@@ -3,6 +3,8 @@
 Introduction
 -------
 
+This application serves the purpose of allowing user to save and manage frequently used websites.
+
 User Stories
 ----------
 
