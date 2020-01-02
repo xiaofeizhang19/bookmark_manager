@@ -3,7 +3,7 @@
 Introduction
 -------
 
-This application serves the purpose of allowing user to save and manage frequently used websites.
+This application serves the purpose of allowing user to save and manage frequently used websites. It has been built using Ruby and Sinatra.
 
 User Stories
 ----------
